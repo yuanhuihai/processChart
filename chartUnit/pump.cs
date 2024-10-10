@@ -10,23 +10,24 @@ using System.Windows.Forms;
 
 namespace chartUnit
 {
-    public partial class fan : UserControl
+    public partial class pump : UserControl
     {
-        public fan()
+        public pump()
         {
             InitializeComponent();
         }
-
         public string status;
 
-       
-     
+
+
         [Description("运行状态"), Category("自定义")]
 
         public string Status
         {
             get { return status; }
-            set { status = value;
+            set
+            {
+                status = value;
 
                 OnStatusChanged();
             }
@@ -36,19 +37,19 @@ namespace chartUnit
         {
             if (status == "run")
             {
-                pictureBox1.Image = Properties.Resources.fanRun;
+                pictureBox1.Image = Properties.Resources.pumpRun;
             }
             if (status == "manual")
             {
-                pictureBox1.Image = Properties.Resources.fanManual;
+                pictureBox1.Image = Properties.Resources.pumpManul;
             }
             if (status == "fault")
             {
-                pictureBox1.Image = Properties.Resources.fanFault;
+                pictureBox1.Image = Properties.Resources.pumpFault;
             }
             if (status == "stop")
             {
-                pictureBox1.Image = Properties.Resources.fanStop;
+                pictureBox1.Image = Properties.Resources.pumpStop;
             }
 
         }

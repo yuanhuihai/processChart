@@ -17,9 +17,6 @@ namespace processChart
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.valve1.ValveColor = Color.Blue;
-        }
+      
     }
 }

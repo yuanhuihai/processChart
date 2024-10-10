@@ -1,6 +1,6 @@
 ﻿namespace chartUnit
 {
-    partial class fan
+    partial class pump
     {
         /// <summary> 
         /// 必需的设计器变量。
@@ -35,7 +35,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::chartUnit.Properties.Resources.fanStop;
+            this.pictureBox1.Image = global::chartUnit.Properties.Resources.pumpStop;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(150, 150);
@@ -43,12 +43,12 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // fan
+            // pump
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.pictureBox1);
-            this.Name = "fan";
+            this.Name = "pump";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

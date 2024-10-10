@@ -61,6 +61,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="pump.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pump.Designer.cs">
+      <DependentUpon>pump.cs</DependentUpon>
+    </Compile>
     <Compile Include="valve.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -77,11 +83,39 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pump.resx">
+      <DependentUpon>pump.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="valve.resx">
       <DependentUpon>valve.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fanFault.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fanManual.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fanStop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fanRun.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pumpFault.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pumpManul.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pumpRun.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pumpStop.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
