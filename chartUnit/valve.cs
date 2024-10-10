@@ -26,7 +26,7 @@ namespace chartUnit
         public Color ValveColor
         {
             get { return valveColor; }
-            set { valveColor = value; }
+            set { valveColor = value;Refresh(); }//刷新
         }
 
 

@@ -19,7 +19,7 @@ namespace processChart
 
         private void button1_Click(object sender, EventArgs e)
         {
-            fan2.BackColor = Color.Green;
+            this.valve1.ValveColor = Color.Blue;
         }
     }
 }
